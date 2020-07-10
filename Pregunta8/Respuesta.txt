@@ -1,0 +1,8 @@
+sudo docker pull registry
+sudo docker run -d -p 5000:5000 --name registro1 registry
+
+sudo docker tag ubuntu localhost:5000/mi-ubuntu
+sudo docker images localhost/5000
+sudo docker images localhost:5000/mi-ubuntu
+sudo docker push localhost:5000/mi-ubuntu
+
